@@ -1,7 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 import NavigationBarComponent from './navigationBarComponent';
 
-export default function Calendar() {
+export default function Settings() {
     const navigate = useNavigate();
 
     return (
@@ -13,8 +13,8 @@ export default function Calendar() {
             position: 'relative',
             padding: '16px'
         }}>
-            <h1>Calendar Page</h1>
-            <p>This is where the calendar will be displayed.</p>
+            <h1>Settings Page</h1>
+            <p>This is where the settings will be displayed.</p>
             <NavigationBarComponent />
         </div>
     );
