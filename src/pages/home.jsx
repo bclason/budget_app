@@ -66,7 +66,7 @@ export default function Home() {
     }, [userId]);
 
     const newTransaction = async () => {
-        navigate('/new-transaction');
+        navigate('/newtransaction');
     };
 
     return (
@@ -117,7 +117,7 @@ export default function Home() {
             {/* add progress bars, add switching between budget and non budget categories, add 5 most recent transactions per category */}
             {/* non budget categories should display balance (category.income - category.expenses) */}
             <div>
-                <div onClick={() => navigate('/categories')} style={{ cursor: 'pointer' }}>
+                <div onClick={() => navigate('/categories', { state: { userId: userId } })}>
                 <h3>Categories</h3>
                 </div>
                 <ul>
@@ -167,7 +167,7 @@ export default function Home() {
                     position: 'absolute',
                     bottom: '0'
                 }}>
-                <NavigationBarComponent />
+                <NavigationBarComponent userId={userId} />
             </div>
         </div>
     );

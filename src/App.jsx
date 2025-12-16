@@ -6,6 +6,9 @@ import Transactions from './pages/transactions.jsx'
 import Categories from './pages/categories.jsx'
 import Calendar from './pages/calendar.jsx'
 import Settings from './pages/settings.jsx'
+import NewCategory from './pages/newCategory.jsx'
+import NewTransaction from './pages/newTransaction.jsx'
+import Repeating from './pages/repeating.jsx'
 
 function App() {
 
@@ -18,6 +21,9 @@ function App() {
           <Route path="/categories" element={<Categories />} />
           <Route path="/calendar" element={<Calendar />} />
           <Route path="/settings" element={<Settings />} />
+          <Route path="/newCategory" element={<NewCategory />} />
+          <Route path="/newtransaction" element={<NewTransaction />} />
+          <Route path="/repeating" element={ <Repeating />} />
         </Routes>
       </div>
     </BrowserRouter>

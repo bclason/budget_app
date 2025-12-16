@@ -37,7 +37,7 @@ export default function Transactions() {
     });
 
     const newTransaction = () => {
-        navigate('/new-transaction', { state: { userId } });
+        navigate('/newtransaction', { state: { userId } });
     };
 
     return (
